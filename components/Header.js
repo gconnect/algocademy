@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import {Container, Row, Col, Button} from 'react-bootstrap'
 import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import ConnectModal from './connectModal'
 
 const Wrapper = styled.div`
   height: 100px;
@@ -13,15 +16,16 @@ const ListItems = styled.div`
   margin-left: 24px;
 `
 export default function Header(){
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return(
        <Wrapper>
          <Container>
          <Row style={{ padding: "24px"}}>
            <Col>
-              {/* <p style={{color: "#1F54DF", fontWeight: "bold"}}> <Image src="/images/logo.svg" alt="logo" width="30px" height="30px"/>                
-              <Link href="/"><a>Algocademy</a></Link>
-              </p>  */}
-
              <a href="/"><Image src="/images/logofull.svg" alt="logo" width="120px" height="50px"/></a> 
            </Col>
            <Col>
@@ -38,7 +42,8 @@ export default function Header(){
               <ListItems>              
                 <Link href="/ecosystem/ecosystemDetail"><a>Web3 Jobs</a></Link>
               </ListItems>
-              <ListItems><Button style={{backgroundColor: "#A32896", border:"#A32896"}}>Connect Wallet</Button></ListItems> 
+              <ListItems><Button style={{backgroundColor: "#A32896", border:"#A32896"}} onClick={handleShow}>Connect Wallet</Button></ListItems> 
+              {/* <ConnectModal show={show} onHide={handleClose} /> */}
             </ul>
            </Col>
          </Row>

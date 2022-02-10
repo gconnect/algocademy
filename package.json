@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@randlabs/myalgo-connect": "^1.1.2",
     "bootstrap": "^5.1.3",
     "next": "latest",
     "react": "17.0.2",

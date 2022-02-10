@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     title: "Build a smart contract with TEAL",
     description: `A week project where you will learn about TEAL 
     build your first smart contract and deploy it
@@ -7,26 +8,32 @@ export const projects = [
     image: "algo",
     requiredSteps : [
       {
+        id: 1,
         title: "Getting Started",
         description: "Understanding TEAL  checkout the teal guide"
       },
       {
+        id: 2,
+        title: "Getting Started With Reach",
+        description: "Understanding TEAL  checkout the teal guide"
+      },
+      {
+        id: 3,
+        title: "Getting Started with Algorand",
+        description: "Understanding TEAL  checkout the teal guide"
+      },
+      {
+        id: 4,
         title: "Getting Started",
         description: "Understanding TEAL  checkout the teal guide"
       },
       {
+        id: 4,
         title: "Getting Started",
         description: "Understanding TEAL  checkout the teal guide"
       },
       {
-        title: "Getting Started",
-        description: "Understanding TEAL  checkout the teal guide"
-      },
-      {
-        title: "Getting Started",
-        description: "Understanding TEAL  checkout the teal guide"
-      },
-      {
+        id: 5,
         title: "Getting Started",
         description: "Understanding TEAL  checkout the teal guide"
       }
@@ -34,71 +41,111 @@ export const projects = [
   },
   
   {
-    title: "Build a smart contract with TEAL",
+    id: 2,
+    title: "Build a smart contract with Reach",
     description: `A week project where you will learn about TEAL 
     build your first smart contract and deploy it
     to the Algorand blokchcain`,
-    image: "reach"
-
+    image: "reach",
+    requiredSteps: [
+      {
+        id: 1,
+        title: "Getting Started",
+        description: "Understanding TEAL  checkout the teal guide"
+      },
+      {
+        id: 2,
+        title: "Getting Started With Reach",
+        description: "Understanding TEAL  checkout the teal guide"
+      },
+      {
+        id: 3,
+        title: "Getting Started with Algorand",
+        description: "Understanding TEAL  checkout the teal guide"
+      },
+      {
+        id: 4,
+        title: "Getting Started",
+        description: "Understanding TEAL  checkout the teal guide"
+      },
+      {
+        id: 4,
+        title: "Getting Started",
+        description: "Understanding TEAL  checkout the teal guide"
+      },
+      {
+        id: 5,
+        title: "Getting Started",
+        description: "Understanding TEAL  checkout the teal guide"
+      }
+    ]
   },
 
   {
+    id: 3,
+    title: "Build a smart contract with PyTeal",
+    description: `A week project where you will learn about TEAL 
+    build your first smart contract and deploy it
+    to the Algorand blokchcain`,
+    image: "yieldly",
+    requiredSteps: []
+  },
+  {
+    id: 4,
+    title: "Understanding Tinyman",
+    description: `A week project where you will learn about TEAL 
+    build your first smart contract and deploy it
+    to the Algorand blokchcain`,
+    image: "tinyman",
+    requiredSteps: []
+  },
+  {
+    id: 5,
+    title: "Understanding Algofi",
+    description: `A week project where you will learn about TEAL 
+    build your first smart contract and deploy it
+    to the Algorand blokchcain`,
+    image: "algofy",
+    requiredSteps: []
+  },
+  {
+    id: 6,
     title: "Build a smart contract with TEAL",
     description: `A week project where you will learn about TEAL 
     build your first smart contract and deploy it
     to the Algorand blokchcain`,
-    image: "yieldly"
+    image: "idx",
+    requiredSteps: []
+  },
+
+  {
+    id: 7,
+    title: "Build a smart contract with TEAL",
+    description: `A week project where you will learn about TEAL 
+    build your first smart contract and deploy it
+    to the Algorand blokchcain`,
+    image: "stakerdao",
+    requiredSteps: []
 
   },
   {
+    id: 8,
     title: "Build a smart contract with TEAL",
     description: `A week project where you will learn about TEAL 
     build your first smart contract and deploy it
     to the Algorand blokchcain`,
-    image: "tinyman"
+    image: "idx",
+    requiredSteps: []
 
   },
   {
+    id: 9,
     title: "Build a smart contract with TEAL",
     description: `A week project where you will learn about TEAL 
     build your first smart contract and deploy it
     to the Algorand blokchcain`,
-    image: "algofy"
-
-  },
-  {
-    title: "Build a smart contract with TEAL",
-    description: `A week project where you will learn about TEAL 
-    build your first smart contract and deploy it
-    to the Algorand blokchcain`,
-    image: "idx"
-
-
-  },
-
-  {
-    title: "Build a smart contract with TEAL",
-    description: `A week project where you will learn about TEAL 
-    build your first smart contract and deploy it
-    to the Algorand blokchcain`,
-    image: "stakerdao"
-
-  },
-  {
-    title: "Build a smart contract with TEAL",
-    description: `A week project where you will learn about TEAL 
-    build your first smart contract and deploy it
-    to the Algorand blokchcain`,
-    image: "idx"
-
-  },
-  {
-    title: "Build a smart contract with TEAL",
-    description: `A week project where you will learn about TEAL 
-    build your first smart contract and deploy it
-    to the Algorand blokchcain`,
-    image: "idx"
-
+    image: "idx",
+    requiredSteps: []
   },
   
 ]
@@ -221,10 +268,10 @@ export const skills = [
         logo : "stakerdao"
       },
       {
-        title: "Practice Swapping on Tinyman",
+        title: "Vote on StakerDao",
         description: "Swap one token for another",
         status: true,
-        logo : "tinyman"
+        logo : "stakerdao"
       },
     ]
   },

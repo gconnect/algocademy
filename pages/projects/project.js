@@ -3,23 +3,33 @@ import styled from "styled-components";
 import ProjectCard from "../../components/projectCard";
 import { Container, Row, Col } from "react-bootstrap";
 import {projects} from '../../data/projectData'
-
-const Wrapper = styled.main`
-  height: 100vh;
-`
+import { useRouter } from 'next/router'
+import Link from "next/link";
 
 export default function Projects(){
-  console.log(projects)
-  
+  const router = useRouter()
+
+  const handleClick = (e, path) => {
+    e.preventDefault()
+ 
+     if (path === "/projects/projectDetail") {
+       router.push(path)
+     }
+   };
+ 
   return(
        <Layout>
          <Container style={{marginTop: '36px'}}>
             <h2>Projects</h2>
             <p>Pick a project and start hacking</p>
            <Row className="justify-content-md-evenly">
-             {projects.map((project)=>{
-               return   <Col md="auto" style={{marginTop: "24px"}}>
-               <ProjectCard image={project.image} title={project.title} description={project.description}/>
+             {projects.map((project, index)=>{
+               return   <Col key={index} md="auto" style={{marginTop: "24px"}}>
+                 <Link href={{ pathname: `/projects/${project.id}`}}>
+                 <a>
+                  <ProjectCard image={project.image} title={project.title} description={project.description} id={project.id}/>
+                  </a>
+                  </Link>
             </Col>
              })}
            </Row>
