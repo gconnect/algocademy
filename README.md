@@ -10,6 +10,7 @@ This is a decentralized educational platform built on the Algorand Blockchain. T
 
 ## Demo/ Mockup
 Here is the link to the figma mockup [design](https://www.figma.com/file/k9SQ1REHvtcMyjTOn2O4aZ/Algorand-Academy?node-id=38%3A744)
+The live site can be found [here](https://algocademy.vercel.app/) 
 
 # Features of the Algo.Finance Solution
 - Projects (Learn by building on Algorand)
