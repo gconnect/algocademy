@@ -2,6 +2,14 @@
 
 This is a decentralized educational platform built on the Algorand Blockchain. The aim is to help developers and non-developers gain more insight on the Algorand blockchain by building. This is also aim at helping boost other Algorand Ecosystem project. By providing quizes that will require participants/learners to visit and interract with other Algorand Ecosystem project by also doing also earning tokens. More like a learn by building and learn to earn.
 
+# Value to the Algorand Ecosystem and Developer Community
+
+The value for the Algorand Ecosystem is to ensure continuous usage and engagement of the ecosystem project by engaging the Algocademy participants with task to visit and transact on ecosystem projects.
+
+The value to the developer community is to ensure that developers get a better understanding of how to write smart contract on the Algorand Blockchain using, Teal, Pyteal and Reach as well as other features of the Algorand blockchain by giving them projects to work on to ensure they are not just going through tutorials but actually learning and building alongside also have opportunity to interract with learners like themselves.
+
+Algocademy also aim to provide job opportunities for the Algorand developers by connecting them with available jobs.
+
 # Development Tools/Language/Library Used
 - Javascript
 - React
