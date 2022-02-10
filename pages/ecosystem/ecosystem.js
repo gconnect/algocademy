@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import {ecosystem} from '../../data/projectData'
 import EcosystemCard from "../../components/ecosystemCard";
-
+import Link from "next/link";
 const Label = styled.label`
   color : #A32896;
 `
@@ -26,7 +26,11 @@ export default function Ecosystem(){
             <Row className="justify-content-md-evenly">
               {ecosystem.map((project)=>{
                 return   <Col md="auto" style={{marginTop: "24px"}}>
-                <EcosystemCard image={project.image} title={project.title} description={project.description}/>
+                <Link href={{ pathname: `/ecosystem/${project.id}`}}>
+                 <a>
+                <EcosystemCard image={project.image} title={project.title} description={project.description} id={project.id}/>
+                </a>
+                </Link>
               </Col>
               })}
             </Row>

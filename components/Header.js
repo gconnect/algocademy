@@ -3,7 +3,6 @@ import {Container, Row, Col, Button} from 'react-bootstrap'
 import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import ConnectModal from './connectModal'
 
 const Wrapper = styled.div`
@@ -37,13 +36,13 @@ export default function Header(){
               <Link href="/ecosystem/ecosystem"><a>Ecosystem</a></Link>
               </ListItems>
               <ListItems>              
-                <Link href="/ecosystem/skills"><a>Skills</a></Link>
+                <Link href="/skills/skills"><a>Skills</a></Link>
               </ListItems>
               <ListItems>              
-                <Link href="/ecosystem/ecosystemDetail"><a>Web3 Jobs</a></Link>
+                <Link href="/web3jobs"><a>Web3 Jobs</a></Link>
               </ListItems>
               <ListItems><Button style={{backgroundColor: "#A32896", border:"#A32896"}} onClick={handleShow}>Connect Wallet</Button></ListItems> 
-              {/* <ConnectModal show={show} onHide={handleClose} /> */}
+              <ConnectModal show={show} handleClose={handleClose}/>
             </ul>
            </Col>
          </Row>

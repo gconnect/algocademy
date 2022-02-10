@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 import {skills} from '../../data/projectData'
 import SkillsCard from "../../components/skillsCard";
+import Link from "next/link";
 
 const Label = styled.label`
   color : #A32896;
@@ -25,7 +26,11 @@ export default function Skills(){
             <Row className="justify-content-md-evenly">
               {skills.map((skill)=>{
                 return   <Col md="auto" style={{marginTop: "24px"}}>
-                <SkillsCard image={skill.image} title={skill.title} description={skill.description}/>
+                  <Link href={{pathname: `/skills/${skill.id}`}}>
+                    <a>
+                      <SkillsCard image={skill.image} title={skill.title} description={skill.description} id={skill.id}/>
+                    </a>
+                  </Link>
               </Col>
               })}
             </Row>

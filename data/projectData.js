@@ -179,6 +179,7 @@ export const steps = [
 
 export const ecosystem = [
   {
+    id: 1,
     title: "IDX",
     description: `IDEX is the world's leading decentralized
     smart contract exchange to support 
@@ -201,55 +202,78 @@ export const ecosystem = [
   },
   
   {
+    id: 2,
     title: "Xfinite",
     description: `Xfinite is a platform designed to re-establish trust between consumers, content creators, and publishers powered by Algorand..`,
-    image: "stakerdao"
-
+    image: "stakerdao",
+    task : [
+      {
+        title: "Participate in StakerDAO Governance",
+        description: "Vote on a proposal with your stakerDAO token",
+        status: true,
+        logo : "stakerdao"
+      },
+      {
+        title: "Vote and earn",
+        description: "Swap one token for another",
+        status: true,
+        logo : "stakerdao"
+      },
+    ]
   },
 
   {
+    id: 3,
     title: "Yieldly",
     description: `Yieldly is the world’s first borderless and interconnected DeFi platform designed and developed on Algorand. `,
-    image: "yieldly"
-
+    image: "yieldly",
+    task: []
   },
   {
+    id: 4,
     title: "Tinyman",
     description: `Tinyman is a reimagined decentralized trading protocol, utilizing the fast and secure framework of the Algorand blockchain to create an open and safe marketplace `,
-    image: "tinyman"
+    image: "tinyman",
+    task: []
 
   },
   {
+    id: 5,
     title: "Algofi",
     description: `Algofi is a fast, low-cost crypto lending market on the Algorand blockchain that makes decentralized lending broadly accessible.`,
-    image: "algofy"
+    image: "algofy",
+    task: []
 
   },
   {
+    id: 6,
     title: "1 World Online",
     description: `1World Online is a blockchain-powered engagement & monetization platform for publishers & brands.`,
-    image: "idx"
-
-
+    image: "idx",
+    task: []
   },
 
   {
+    id: 7,
     title: "Aikon",
     description: `AIKON's flagship product, ORE ID, is a simple user onboarding and blockchain identity-as-a-service that connects businesses and their users to leading public blockchains `,
-    image: "stakerdao"
-
+    image: "stakerdao",
+    task: []
   },
   {
+    id: 8,
     title: "realio",
     description: `Realio is tokenizing its network through the RST, which aims to be the first truly hybrid security/utility token and more.`,
-    image: "idx"
+    image: "idx",
+    task: []
 
   },
   {
+    id: 9,
     title: "Bleumi",
     description: `Bleumi provides a payment solution that enables businesses to adopt digital currency in everyday payments.`,
-    image: "idx"
-
+    image: "idx",
+    task: []
   },
   
 ]
@@ -257,6 +281,7 @@ export const ecosystem = [
 
 export const skills = [
   {
+    id: 1,
     title: "StakerDAO",
     description: `Become an active protocol governance participants.`,
     image: "stakerdao",
@@ -277,56 +302,67 @@ export const skills = [
   },
   
   {
+    id: 2,
     title: "IDEX",
     description: `Trade on the IDEX crypto market place.
     Buy and sell asset`,
-    image: "idx"
-
+    image: "idx",
+    task: []
   },
 
   {
+    id: 3,
     title: "Yieldly",
     description: `Master token swaping and staking on layer 2`,
-    image: "yieldly"
+    image: "yieldly",
+    task: []
 
   },
   {
+    id: 4,
     title: "Tinyman",
     description: `Master swapping of different assets on tinyman `,
-    image: "tinyman"
-
+    image: "tinyman",
+    task: []
   },
   {
+    id: 5,
     title: "Algofi",
     description: `Master leanding and liquidity pool on layer 2`,
-    image: "algofy"
+    image: "algofy",
+    task: []
 
   },
   {
+    id: 6,
     title: "1 World Online",
     description: `1Create your own asset without coding.`,
-    image: "idx"
-
-
+    image: "idx",
+    task: []
   },
 
   {
+    id: 7,
     title: "Aikon",
     description: `Become an active protocol governance participants`,
-    image: "stakerdao"
+    image: "stakerdao",
+    task: []
 
   },
   {
+    id: 8,
     title: "realio",
     description: `Become an active protocol governance participants`,
-    image: "idx"
+    image: "idx",
+    task: []
 
   },
   {
+    id: 9,
     title: "Bleumi",
     description: `Become an active protocol governance participants.`,
-    image: "idx"
-
+    image: "idx",
+    task: []
   },
   
 ]
